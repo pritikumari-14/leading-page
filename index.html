@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Leading Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">logo</div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-section">
+            <h1>Development Services</h1>
+            <p>Lorem ipsum  sit amet, adipisicing elit. Quam  enim placeat fugit corrupti? Sequi
+                tenetur dolorem sed, modi!</p>
+                <div class="button">
+                    <a href="">Join Now</a>
+                </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
+        const navmenu = document.getElementsByClassName("nav-menu")[0]
+        toggleBtn.addEventListener("click",() =>{
+            navmenu.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>
